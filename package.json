@@ -4,7 +4,7 @@
   "description": "",
   "main": "public/index.html",
   "scripts": {
-    "bulid:sass": "sass --no-source-map src/sass/main.scss public/css/style.css",
+    "build:sass": "sass --no-source-map src/sass/main.scss public/css/style.css",
     "copy:assests": "cp -v -f -R src/assests/ public/",
     "copy:html": "cp -v -f -R src/*.html public/",
     "copy": "npm-run-all --parallel copy:*",
@@ -15,7 +15,7 @@
     "serve": "browser-sync start --server public --files public",
     "start": "npm-run-all copy --parallel watch serve",
     "build": "npm-run-all copy:html build:*",
-    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
+    "build:post": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
   },
   "keywords": [],
   "author": "",
