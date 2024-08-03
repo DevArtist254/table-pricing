@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.heading {
+  color: #0066ff;
+  font-size: 60px;
+  text-align: center;
+}
+
+.container {
+  width: 1000px;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 8px solid #0066ff;
+}
+.container__tiny {
+  background-color: #0066ff;
+  color: #ffffff;
+}
+.container__tiny .content__list:not(:last-child) {
+  border-bottom: 0.5px solid #ffffff;
+}
+.container__free, .container__large {
+  color: #1f3049;
+}
+.container__free--heading, .container__large--heading {
+  color: #0066ff;
+}
+.container__free .content__list:not(:last-child), .container__large .content__list:not(:last-child) {
+  border-bottom: 0.5px solid #1f3049;
+}
+.container__free, .container__tiny, .container__large {
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container__free--heading, .container__tiny--heading, .container__large--heading {
+  font-size: 21px;
+}
+.container__free--btn, .container__tiny--btn, .container__large--btn {
+  padding: 16px 24px;
+  font-size: 24px;
+  background-color: #0066ff;
+  color: #ffffff;
+}
+
+.content {
+  list-style: none;
+}
+.content__list {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.pricing {
+  font-size: 24px;
+  font-weight: 400;
+}
+.pricing__bold {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.btn--sec {
+  background-color: #ffffff;
+  color: #1f3049;
+}
+
+/*# sourceMappingURL=style.css.map */
